@@ -1,0 +1,28 @@
+[
+  {
+    "id": "1",
+    "collector_datetime": "20180914150000",
+    "temperate": "25",
+    "humidity": "60",
+    },
+    {"id": "2",
+    "collector_datetime": "20180914150010",
+    "temperate": "26",
+    "humidity": "61",
+    },
+    {"id": "2",
+    "collector_datetime": "20180914150010",
+    "temperate": "26",
+    "humidity": "61",
+    },
+    {"id": "2",
+    "collector_datetime": "20180914150010",
+    "temperate": "26",
+    "humidity": "61",
+    },
+    {"id": "2",
+    "collector_datetime": "20180914150010",
+    "temperate": "26",
+    "humidity": "61",
+    }
+]
