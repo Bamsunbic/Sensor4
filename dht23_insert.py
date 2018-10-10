@@ -22,7 +22,8 @@ while True:
     print('humidity : {:3.2f}'.format(s.humidity() / 1.))
     print('temperature : {:3.2f}'.format(s.temperature() / 1.))
     cur = con.cursor()
-    cur.execute('''INSERT INTO data(currentdate, currenttime, humidity, temperature, device) values(date('now'), time('now'), {},{},'rasbi'\n)'''.format(humidity,temperature))
+    #cur.execute('''INSERT INTO data(currentdate, currenttime, humidity, temperature, device) values(date('now','localtime'), time('now'), {},{},'rasbi'\n)'''.format(humidity,temperature))
+    cur.execute('''INSERT INTO data(currentdate, currenttime, humidity, temperature, device) values(date('now','localtime'), time('now','localtime'), {},{},'rasbi'\n)'''.format(humidity,temperature))
     con.commit()
 
     s.cancel()
